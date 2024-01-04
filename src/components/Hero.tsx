@@ -60,7 +60,7 @@ const Hero = () => {
             type="button"
             onClick={prevBanner}
           >
-            {"< Prev"}
+            {"< "}
           </button>
         </div>
         <div className="absolute right-4 top-1/2 transform -translate-y-1/2">
@@ -69,7 +69,7 @@ const Hero = () => {
             type="button"
             onClick={nextBanner}
           >
-            {"Next >"}
+            {">"}
           </button>
         </div>
       </div>
