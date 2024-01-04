@@ -40,19 +40,20 @@ const Hero = () => {
         className="w-full max-h-screen object-contain"
       />
       <div className="absolute top-0 w-full h-full bg-black/30 text-white flex flex-col items-center justify-center">
-        <h1
-          style={{
-            fontSize: '3rem',
-            background: 'linear-gradient(90deg,#DC6601,#FF5F1F)',
-            WebkitBackgroundClip: 'text',
-            backgroundClip: 'text',
-            color: 'transparent',
-          }}
-          className="md:text-[200px] text-[3.6rem] font-manrope font-extrabold text-transparent bg-clip-text md:text-left text-center bg-transparent"
-        >
-          EXPLORE BLOGS 
-        </h1>
-        <p className="text-xl md:text-2xl lg:text-5xl font-semibold"></p>
+      <h1
+  className="text-4xl md:text-6xl lg:text-8xl font-manrope font-extrabold text-transparent bg-clip-text text-center"
+  style={{
+    background: 'linear-gradient(90deg, #DC6601, #FF5F1F)',
+    WebkitBackgroundClip: 'text',
+    backgroundClip: 'text',
+    color: 'transparent',
+  }}
+>
+  EXPLORE BLOGS
+</h1>
+        <p className="text-lg md:text-2xl lg:text-4xl font-semibold">
+          {/* Add some meaningful content here */}
+        </p>
         <div className="absolute left-4 top-1/2 transform -translate-y-1/2">
           <button
             className="text-blue-500 bg-transparent border border-solid border-blue-500 hover:bg-blue-500 hover:text-white active:bg-blue-600 font-bold uppercase text-xs px-4 py-2 rounded outline-none focus:outline-none mr-1 mb-1 ease-linear transition-all duration-150"
@@ -77,5 +78,3 @@ const Hero = () => {
 };
 
 export default Hero;
-
-
