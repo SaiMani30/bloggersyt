@@ -10,7 +10,7 @@ interface Props {
 
 const BlogContent = ({ posts }: Props) => {
   return (
-    <Container className="bg-gray-100 py-20 px-10 flex flex-col gap-10">
+    <Container className="bg-hsla py-20 px-10 flex flex-col gap-10">
       {posts.map((post) => (
         <Link
           href={{
@@ -36,7 +36,7 @@ const BlogContent = ({ posts }: Props) => {
             <div className="w-full md:w-2/5 flex flex-col justify-between py-10 px-4">
               <div className="flex flex-col gap-5">
                 <div className="flex items-center gap-2">
-                  {post?.categories.map((item) => (
+                  {(post?.categories ?? []).map((item) => (
                     <p
                       key={item?._id}
                       className="text-xs uppercase text-blue-600 font-semibold"

@@ -1,3 +1,37 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  background-color: hsla(222, 47%, 11%, 1);
+  zoom:90%;
+}
+
+/* Add responsive styles using media queries */
+@media (max-width: 640px) {
+  /* Mobile styles */
+  body {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: 641px) and (max-width: 1024px) {
+  /* Tablet styles */
+  body {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1025px) {
+  /* Desktop styles */
+  body {
+    font-size: 18px;
+  }
+}
+
+/* In your Tailwind CSS file */
+@layer utilities {
+  .bg-hsla {
+    background-color: hsla(222, 47%, 11%, 1);
+  }
+}

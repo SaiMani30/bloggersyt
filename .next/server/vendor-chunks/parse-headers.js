@@ -1,0 +1,24 @@
+/*
+ * ATTENTION: An "eval-source-map" devtool has been used.
+ * This devtool is neither made for production nor for readable output files.
+ * It uses "eval()" calls to create a separate source file with attached SourceMaps in the browser devtools.
+ * If you are trying to read the output file, select a different devtool (https://webpack.js.org/configuration/devtool/)
+ * or disable the default devtool with "devtool: false".
+ * If you are looking for production-ready output files, see mode: "production" (https://webpack.js.org/configuration/mode/).
+ */
+exports.id = "vendor-chunks/parse-headers";
+exports.ids = ["vendor-chunks/parse-headers"];
+exports.modules = {
+
+/***/ "(rsc)/./node_modules/parse-headers/parse-headers.js":
+/*!*****************************************************!*\
+  !*** ./node_modules/parse-headers/parse-headers.js ***!
+  \*****************************************************/
+/***/ ((module) => {
+
+eval("var trim = function(string) {\n    return string.replace(/^\\s+|\\s+$/g, \"\");\n}, isArray = function(arg) {\n    return Object.prototype.toString.call(arg) === \"[object Array]\";\n};\nmodule.exports = function(headers) {\n    if (!headers) return {};\n    var result = {};\n    var headersArr = trim(headers).split(\"\\n\");\n    for(var i = 0; i < headersArr.length; i++){\n        var row = headersArr[i];\n        var index = row.indexOf(\":\"), key = trim(row.slice(0, index)).toLowerCase(), value = trim(row.slice(index + 1));\n        if (typeof result[key] === \"undefined\") {\n            result[key] = value;\n        } else if (isArray(result[key])) {\n            result[key].push(value);\n        } else {\n            result[key] = [\n                result[key],\n                value\n            ];\n        }\n    }\n    return result;\n};\n//# sourceURL=[module]\n//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIndlYnBhY2s6Ly9ibG9nZ2Vyc3l0Ly4vbm9kZV9tb2R1bGVzL3BhcnNlLWhlYWRlcnMvcGFyc2UtaGVhZGVycy5qcz8xZTBiIl0sInNvdXJjZXNDb250ZW50IjpbInZhciB0cmltID0gZnVuY3Rpb24oc3RyaW5nKSB7XG4gIHJldHVybiBzdHJpbmcucmVwbGFjZSgvXlxccyt8XFxzKyQvZywgJycpO1xufVxuICAsIGlzQXJyYXkgPSBmdW5jdGlvbihhcmcpIHtcbiAgICAgIHJldHVybiBPYmplY3QucHJvdG90eXBlLnRvU3RyaW5nLmNhbGwoYXJnKSA9PT0gJ1tvYmplY3QgQXJyYXldJztcbiAgICB9XG5cbm1vZHVsZS5leHBvcnRzID0gZnVuY3Rpb24gKGhlYWRlcnMpIHtcbiAgaWYgKCFoZWFkZXJzKVxuICAgIHJldHVybiB7fVxuXG4gIHZhciByZXN1bHQgPSB7fVxuXG4gIHZhciBoZWFkZXJzQXJyID0gdHJpbShoZWFkZXJzKS5zcGxpdCgnXFxuJylcblxuICBmb3IgKHZhciBpID0gMDsgaSA8IGhlYWRlcnNBcnIubGVuZ3RoOyBpKyspIHtcbiAgICB2YXIgcm93ID0gaGVhZGVyc0FycltpXVxuICAgIHZhciBpbmRleCA9IHJvdy5pbmRleE9mKCc6JylcbiAgICAsIGtleSA9IHRyaW0ocm93LnNsaWNlKDAsIGluZGV4KSkudG9Mb3dlckNhc2UoKVxuICAgICwgdmFsdWUgPSB0cmltKHJvdy5zbGljZShpbmRleCArIDEpKVxuXG4gICAgaWYgKHR5cGVvZihyZXN1bHRba2V5XSkgPT09ICd1bmRlZmluZWQnKSB7XG4gICAgICByZXN1bHRba2V5XSA9IHZhbHVlXG4gICAgfSBlbHNlIGlmIChpc0FycmF5KHJlc3VsdFtrZXldKSkge1xuICAgICAgcmVzdWx0W2tleV0ucHVzaCh2YWx1ZSlcbiAgICB9IGVsc2Uge1xuICAgICAgcmVzdWx0W2tleV0gPSBbIHJlc3VsdFtrZXldLCB2YWx1ZSBdXG4gICAgfVxuICB9XG5cbiAgcmV0dXJuIHJlc3VsdFxufVxuIl0sIm5hbWVzIjpbInRyaW0iLCJzdHJpbmciLCJyZXBsYWNlIiwiaXNBcnJheSIsImFyZyIsIk9iamVjdCIsInByb3RvdHlwZSIsInRvU3RyaW5nIiwiY2FsbCIsIm1vZHVsZSIsImV4cG9ydHMiLCJoZWFkZXJzIiwicmVzdWx0IiwiaGVhZGVyc0FyciIsInNwbGl0IiwiaSIsImxlbmd0aCIsInJvdyIsImluZGV4IiwiaW5kZXhPZiIsImtleSIsInNsaWNlIiwidG9Mb3dlckNhc2UiLCJ2YWx1ZSIsInB1c2giXSwibWFwcGluZ3MiOiJBQUFBLElBQUlBLE9BQU8sU0FBU0MsTUFBTTtJQUN4QixPQUFPQSxPQUFPQyxPQUFPLENBQUMsY0FBYztBQUN0QyxHQUNJQyxVQUFVLFNBQVNDLEdBQUc7SUFDcEIsT0FBT0MsT0FBT0MsU0FBUyxDQUFDQyxRQUFRLENBQUNDLElBQUksQ0FBQ0osU0FBUztBQUNqRDtBQUVKSyxPQUFPQyxPQUFPLEdBQUcsU0FBVUMsT0FBTztJQUNoQyxJQUFJLENBQUNBLFNBQ0gsT0FBTyxDQUFDO0lBRVYsSUFBSUMsU0FBUyxDQUFDO0lBRWQsSUFBSUMsYUFBYWIsS0FBS1csU0FBU0csS0FBSyxDQUFDO0lBRXJDLElBQUssSUFBSUMsSUFBSSxHQUFHQSxJQUFJRixXQUFXRyxNQUFNLEVBQUVELElBQUs7UUFDMUMsSUFBSUUsTUFBTUosVUFBVSxDQUFDRSxFQUFFO1FBQ3ZCLElBQUlHLFFBQVFELElBQUlFLE9BQU8sQ0FBQyxNQUN0QkMsTUFBTXBCLEtBQUtpQixJQUFJSSxLQUFLLENBQUMsR0FBR0gsUUFBUUksV0FBVyxJQUMzQ0MsUUFBUXZCLEtBQUtpQixJQUFJSSxLQUFLLENBQUNILFFBQVE7UUFFakMsSUFBSSxPQUFPTixNQUFNLENBQUNRLElBQUksS0FBTSxhQUFhO1lBQ3ZDUixNQUFNLENBQUNRLElBQUksR0FBR0c7UUFDaEIsT0FBTyxJQUFJcEIsUUFBUVMsTUFBTSxDQUFDUSxJQUFJLEdBQUc7WUFDL0JSLE1BQU0sQ0FBQ1EsSUFBSSxDQUFDSSxJQUFJLENBQUNEO1FBQ25CLE9BQU87WUFDTFgsTUFBTSxDQUFDUSxJQUFJLEdBQUc7Z0JBQUVSLE1BQU0sQ0FBQ1EsSUFBSTtnQkFBRUc7YUFBTztRQUN0QztJQUNGO0lBRUEsT0FBT1g7QUFDVCIsImZpbGUiOiIocnNjKS8uL25vZGVfbW9kdWxlcy9wYXJzZS1oZWFkZXJzL3BhcnNlLWhlYWRlcnMuanMiLCJzb3VyY2VSb290IjoiIn0=\n//# sourceURL=webpack-internal:///(rsc)/./node_modules/parse-headers/parse-headers.js\n");
+
+/***/ })
+
+};
+;

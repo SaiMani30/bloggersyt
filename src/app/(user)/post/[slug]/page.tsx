@@ -42,7 +42,7 @@ const SlugPage = async ({ params: { slug } }: Props) => {
   const post: Post = await client.fetch(query, { slug });
 
   return (
-    <Container className="mb-10">
+    <Container className="mb-10 text-white">
       <div className="flex items-center mb-10">
         <div className="w-full md:w-2/3">
           <Image
@@ -69,35 +69,28 @@ const SlugPage = async ({ params: { slug } }: Props) => {
           </p>
           <div className="flex items-center gap-3">
             <Link
-              href={"https://www.youtube.com/channel/UChkOsij0dhgft0GhHRauOAA"}
-              target="blank"
-              className="w-10 h-10 bg-red-600 text-white text-xl rounded-full flex items-center justify-center hover:bg-[#5442ae] duration-200"
-            >
-              <FaYoutube />
-            </Link>
-            <Link
-              href={"https://www.youtube.com/channel/UChkOsij0dhgft0GhHRauOAA"}
+              href={"https://www.github.com/SaiMani30"}
               target="blank"
               className="w-10 h-10 bg-gray-500 text-white text-xl rounded-full flex items-center justify-center hover:bg-[#5442ae] duration-200"
             >
               <FaGithub />
             </Link>
             <Link
-              href={"https://www.youtube.com/channel/UChkOsij0dhgft0GhHRauOAA"}
+              href={"https://www.facebook.com/SaiManikantaPatro"}
               target="blank"
               className="w-10 h-10 bg-[#3e5b98] text-white text-xl rounded-full flex items-center justify-center hover:bg-[#5442ae] duration-200"
             >
               <FaFacebookF />
             </Link>
             <Link
-              href={"https://www.youtube.com/channel/UChkOsij0dhgft0GhHRauOAA"}
+              href={"https://www.instagram.com/nameis_mani30"}
               target="blank"
               className="w-10 h-10 bg-[#bc1888] text-white text-xl rounded-full flex items-center justify-center hover:bg-[#5442ae] duration-200"
             >
               <FaInstagram />
             </Link>
             <Link
-              href={"https://www.youtube.com/channel/UChkOsij0dhgft0GhHRauOAA"}
+              href={"https://www.linkedin.com/in/sai-manikanta-patro-b21011204/"}
               target="blank"
               className="w-10 h-10 bg-blue-500 text-white text-xl rounded-full flex items-center justify-center hover:bg-[#5442ae] duration-200"
             >

@@ -12,6 +12,7 @@ const query = groq`*[_type == 'post']{
 
 export default async function Home() {
   const posts = await client.fetch(query);
+  
 
   return (
     <main>
